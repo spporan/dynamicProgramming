@@ -10,7 +10,14 @@ fun main(args: Array<String>) {
 
 
 //grid travel
-// solve using brute force recursion
+/**
+ * solve using brute force
+ *
+ *  time complexity O (2^(n+m)) ###  where m and  n are the two input and  every root node have 2 two child
+ *  array.
+ *
+ *  space complexity O(m+n)  ### where m and  n are the two input
+ */
 fun gridTravel(m: Int, n: Int): Int {
     if (n == 0 || m == 0) return 0 // base case
 
@@ -20,8 +27,14 @@ fun gridTravel(m: Int, n: Int): Int {
     return gridTravel(m-1, n) + gridTravel(m, n-1)
 }
 
-//solved using  dynamic programming
-
+/**
+ * solve following the memorizing method
+ *
+ *  time complexity O (n*m) ###  where m is the height of the tree and n the number of times being executed
+ *  array.
+ *
+ *  space complexity O(m+n)  ### where m and  n are the two input
+ */
 fun gridTravelByDP(m: Int, n: Int, memo: HashMap<String, Long> = hashMapOf<String, Long>()): Long {
     val key = "$m,$n"
     // if check  already  have calculated this path. if calculated then just return from the map
