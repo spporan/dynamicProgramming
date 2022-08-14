@@ -10,7 +10,7 @@ fun main() {
     println("countConstruct : enterapotentpot")
     println(" ${allConstruct("enterapotentpot", arrayOf("a", "p", "ent", "enter", "ot", "o", "t")).toList().map { it.toList() }}")
     println("countConstruct: eeeeeeeeeeeeeef")
-    println("${allConstruct("eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeef", arrayOf("e", "ee", "eeee", "eeeee","eeeee", "eeeeeeee")).toList().map { it.toList() }}")
+    println("${allConstruct("eeeeeeeeeeeeeef", arrayOf("e", "ee", "eeee", "eeeee","eeeee", "eeeeeeee")).toList().map { it.toList() }}")
 }
 
 /**
